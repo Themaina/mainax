@@ -1,0 +1,15 @@
+{
+	"name": "Alvin Maina",
+	"logo": "",
+	
+	"username": {
+		"github": "Themainax",
+		"medium": "@--andrewnelson"
+	},
+
+	"portfolio": { 
+		"forkthis": " Find me on github ",
+		"repo_html": "https://github.com/Themaina/Themaina",
+		"repo_api": "https://api.github.com/repos/Themaina"
+	}
+}
