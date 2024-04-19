@@ -26,19 +26,19 @@ export default function Career() {
 				<SectionTitle
 					title="Experience"
 					preTitle="Career"
-					subTitle="I am current managing, designing, and developing all consumer and digital product initiatives at My Supply Co."
+					subTitle="I am current managing, designing, and developing all consumer and digital product initiatives at crosstech.ke."
 				/>
 				<section className={career.area}>
 					<article className={career.company}>
 						<div className={career.companyContent}>
 							<span className={career.companyHeader}>
-								<h3>My Supply Co.</h3>
+								<h3>Crosstech.ke </h3>
 								<h4>Permanent Full-time</h4>
-								<h4>Apr 2019 - Present · 3 yrs 10 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
+								<h4>Apr 2022 - Present · 2 yrs 10 mos</h4>
+								<h5>Nairobi, Kenya</h5>
 							</span>
 							<p>
-							My Supply Co. helps Canadians manage mental and physical health with naturally occurring nootropic and adaptogenic products. They carry products with complex attributes, aiming to solve a large variety of personal care needs — this requires an extremely customized and evolving approach to how the store is built and functions.
+							Crosstech, the go-to destination for  cutting-edge electronics and tech essentials in Kenya. With a commitment to innovation and customer satisfaction, Crosstech offers a diverse range of products, from gadgets to accessories. Backed by knowledgeable experts, customers can expect top-tier solutions and guidance for their digital needs
 							</p>
 						</div>
 						<div className={career.companyAlt}></div>
@@ -48,11 +48,11 @@ export default function Career() {
 						<div className={career.position}>
 							<div className={career.positionContent}>
 								<span class={career.positionHeader}>
-									<h3>Director of Product Design and Development</h3>
-									<h4>Nov 2021 - Present · 1 yrs 3 mos</h4>
+									<h3> Web Design and Development</h3>
+									<h4>Nov 2022 - Present · 2 yrs</h4>
 								</span>
 								<p>
-								I am responsible for the ideation, planning, and development of new consumer goods—and customer and employee facing microservice software. During these projects I work with key stakeholders within our company and supplychain to ensure and meet quality goals across multiple domains.
+								I am responsible for the Ideation, Design ,Development and maintenanace of the companys E-commerce platform.
 								</p>
 							</div>
 							<div className={career.positionAlt}></div>
@@ -84,8 +84,8 @@ export default function Career() {
 										<span className={career.subList}><span className={career.bullet}></span>Increased AOV by 8.3%</span>
 									</li>
 									<li>
-										Bespoke ID verification software and WooCommerce integration
-										<span className={career.subList}><span className={career.bullet}></span>Decreased Credit Card fraud by 98%</span>
+										KYC verification application 
+										<span className={career.subList}><span className={career.bullet}></span>Decreased fake orders and fraudsters by 98%</span>
 									</li>
 								</ul>
 								<Badges list={fullStack} block="stack" fullContainer="fullContainer"/>
@@ -127,13 +127,13 @@ export default function Career() {
 					<article className={career.company}>
 						<div className={career.companyContent}>
 							<span className={career.companyHeader}>
-								<h3>Another Creative Ltd.</h3>
+								<h3>Zeex ltd .</h3>
 								<h4>Contract Part-time</h4>
-								<h4>Jun 2016 - Present · 6 yrs 8 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
+								<h4>Jun 2021 - Present · 6 yrs 8 mos</h4>
+								<h5>Nakuru,Kenya</h5>
 							</span>
 							<p>
-							Another Creative is a full stack agency that helps deliver exceptional digital experiences to small and medium businesses. Branding, Marketing, and Web/Software Development.
+							Zeex is a full stack agency that helps deliver exceptional digital experiences to small and medium businesses. Branding, Marketing, and Web/Software Development.
 							</p>
 						</div>
 						<div className={career.companyAlt}></div>
@@ -142,13 +142,13 @@ export default function Career() {
 					<article className={career.company}>
 						<div className={career.companyContent}>
 							<span className={career.companyHeader}>
-								<h3>West Coast Electronics</h3>
+								<h3> Dexters Electronics</h3>
 								<h4>Permanent Full-time</h4>
-								<h4>Jan 2006 - Nov 2011 · 5 yrs 11 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
+								<h4>Jan 2020 - June 2021 · 1 yr</h4>
+								<h5> Nairobi , Kenya </h5>
 							</span>
 							<p>I was the Electronics Wizard 🧙‍♂️</p>
-							<p>West Coast Electronics was a repair shop that fixed computers, consoles, and cell phones.</p>
+							<p> Dexters Electronics was a repair shop that fixed computers, consoles, and cell phones.</p>
 						</div>
 						<div className={career.companyAlt}></div>
 					</article>

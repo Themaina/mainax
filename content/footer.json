@@ -3,17 +3,17 @@
 		{ 
 			"person": "Dst Fiber- Marketing Director",
 			"link": "",
-			"note": "Thank you for all the advice and feedback."
+			"note": "My first client."
 		},
 		{ 
-			"person": "Colorpong - Artist",
+			"person": "Ruth Mwende - Tester",
 			"link": "ttps://www.youworkforthem.com/designer/536/colorpong?aff=1115",
-			"note": "Checkout their amazing vector illustrations."
+			"note": "Checkout her other projects"
 		},
 		{ 
-			"person": "Brittany Chiang - Software Engineer",
-			"link": "https://brittanychiang.com/",
-			"note": "A major inspiration to create an open source theme."
+			"person": "Stephanie williams",
+			"link": "https://steiphy.com/",
+			"note": "A major inspiration to create websites"
 		},
 		{ 
 			"person": "Vercel - Platform",
@@ -24,20 +24,20 @@
 
 	"links": [
 		{ 
-			"person": "YWFT Creative Marketplace",
-			"link": "https://www.youworkforthem.com/?aff=1115",
-			"note": "Best in class creative assets."
+			"person": "Crosstech.ke",
+			"link": "https://www.crosstech.ke/?aff=1115",
+			"note": "Best in class tech supplier ."
 		}
 	],
 
 	"social": [
 		{
-			"url": "https://medium.com/@--andrewnelson",
+			"url": "https://medium.com/@alvor.mi.na",
 			"icon": "medium"
 		},
 		{
-			"url": "https://dev.to/andrewnelson",
-			"icon": "dev"
+			"url": "https://wa.me/797049888",
+			"icon": "whatsapp"
 		},
 		{
 			"url": "https://www.linkedin.com/in/themainax/",

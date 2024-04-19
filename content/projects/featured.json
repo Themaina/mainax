@@ -1,9 +1,9 @@
 [
 	{
-		"project": "My Supply Co.",
-		"url": "https://mysupplyco.com",
+		"project": "crosstech.ke",
+		"url": "https://crosstech.ke.com",
 		"repo": "Private",
-		"descriptionTitle": "D2C & B2B ecommerce site and blog",
+		"descriptionTitle": "B2C & B2B ecommerce site and blog",
 		"description": "with elegant solutions for a complex codebase and customer journey.",
 		"imageOptions": [
 		],
@@ -27,10 +27,10 @@
 		]
 	},
 	{
-		"project": "andrewnelson.net",
-		"url": "https://github.com/atlamors/portfolio",
-		"repo": "Public",
-		"descriptionTitle": "An open source portfolio",
+		"project": "Patnaninvestment.com",
+		"url": "https://patnaninvestment.com",
+		"repo": "private",
+		"descriptionTitle": "A website for Patnan investment",
 		"description": "built on Next.js and React. A fast and agile MERN stack single page application.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
@@ -49,5 +49,55 @@
 			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
 			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
 		]
+	},
+	{
+		"project": " www.hinatapharmacy.ke",
+		"url": "https://hinatapharmacy.co.ke",
+		"repo": "private",
+		"descriptionTitle": "An E-commerce platform for Hinata Pharmacy .",
+		"description": "Built on Next.js and the server side with Laravel 8.0 . A complete E-commerce platform  with a mobile app",
+		"imageOptions": [
+			{ "key": "size", 		"value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+		],
+		"stack": [
+			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
+			{ "key": "react", 		"name": "React", 		"type": "devicon" },
+			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
+			{ "key": "mongodb", 	"name": "MongoDB", 		"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
+			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
+			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
+		]
+	},
+	{
+		"project":" www.dstfiber.co.ke ",
+		"url": "https://dstfiber.co.ke",
+		"repo": "private",
+		"descriptionTitle": "A website for DST Fiber LTD ",
+		"description": "Its built on Next.js . A fast and agile single page application.",
+		"imageOptions": [
+			{ "key": "size", 		"value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+		],
+		"stack": [
+			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
+			{ "key": "react", 		"name": "React", 		"type": "devicon" },
+			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
+			{ "key": "mongodb", 	"name": "MongoDB", 		"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
+			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
+			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
+		]
 	}
+	
+
 ]
