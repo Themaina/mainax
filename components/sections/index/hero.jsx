@@ -69,7 +69,7 @@ export default function Hero() {
 						{content.buttons.primary.title}
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}
-							onClick={ ()=> window.open("https://www.linkedin.com/in/themainax/", "_blank") } >
+							onClick={ ()=> window.open("https://wa.me/254797049888/", "_blank") } >
 						{content.buttons.secondary.title}
 					</button>
 				</section>

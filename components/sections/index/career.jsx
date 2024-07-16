@@ -103,7 +103,7 @@ export default function Career() {
 									I was brought on to help fill multiple creative rolls in a small start-up environment. Working with the marketing team to create the brand and logos — designing and developing a new front end for the website — and improving the users experience and store KPIs through design and merchandising optimizations.
 								</p>
 								<p>
-									Some key projects completed during this time 👇
+									Some key projects completed during this time :
 								</p>
 								<ul className={career.list}>
 									<li>

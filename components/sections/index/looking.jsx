@@ -23,11 +23,11 @@ export default function Looking() {
 	return (
 		<Section classProp={`${looking.section} borderBottom`}>	
 			<Container classProp={`${section.title} ${looking.container}`} spacing={['verticalXXXLrg']}>
-				<h1>&apos;Hire me .</h1>
+				<h1>&apos;Hire me</h1>
 				<h2 className={looking.json}>: &#123;</h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight}>Front End Engineer</span>,</h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight2}>User Experience Designer</span></h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Back End Developer </span></h2>
+				<h2 className={looking.jsonSub}><span className={looking.highlight}>Web developer</span>,</h2>
+				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Mobile App developer</span></h2>
+				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Technician</span></h2>
 				<h2 className={looking.json}>&#125;</h2>
 				<h4>I am particularily interested in product facing postions where I can help make an organization/individual wide impact.</h4>
 				{/* <h2>Senior <span className={looking.highlight}>User Experience</span> Designer</h2> */}

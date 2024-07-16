@@ -1,17 +1,11 @@
 [
 	{
 		"project": "crosstech.ke",
-		"url": "https://crosstech.ke.com",
+		"url": "https://crosstech.ke",
 		"repo": "Private",
 		"descriptionTitle": "B2C & B2B ecommerce site and blog",
 		"description": "with elegant solutions for a complex codebase and customer journey.",
-		"imageOptions": [
-		],
-		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
-			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
-		],
+		
 		"stack": [
 			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
 			{ "key": "mysql", 		"name": "mySQL", 		"type": "devicon" },
@@ -27,17 +21,12 @@
 		]
 	},
 	{
-		"project": "Patnaninvestment.com",
-		"url": "https://patnaninvestment.com",
+		"project": "Patnaninvestment.co.ke",
+		"url": "https://patnaninvestment.co.ke",
 		"repo": "private",
 		"descriptionTitle": "A website for Patnan investment",
-		"description": "built on Next.js and React. A fast and agile MERN stack single page application.",
-		"imageOptions": [
-			{ "key": "size", 		"value": "large" }
-		],
-		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
-		],
+		"description": "Built on Next.js and React, a fast and agile single page application.that showcases the company Profile To the World",
+		
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
 			{ "key": "react", 		"name": "React", 		"type": "devicon" },
@@ -51,17 +40,12 @@
 		]
 	},
 	{
-		"project": " www.hinatapharmacy.ke",
+		"project": " www.hinatapharmacy.co.ke",
 		"url": "https://hinatapharmacy.co.ke",
 		"repo": "private",
 		"descriptionTitle": "An E-commerce platform for Hinata Pharmacy .",
 		"description": "Built on Next.js and the server side with Laravel 8.0 . A complete E-commerce platform  with a mobile app",
-		"imageOptions": [
-			{ "key": "size", 		"value": "large" }
-		],
-		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
-		],
+
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
 			{ "key": "react", 		"name": "React", 		"type": "devicon" },
@@ -76,16 +60,11 @@
 	},
 	{
 		"project":" www.dstfiber.co.ke ",
-		"url": "https://dstfiber.co.ke",
+		"url": "https://reimagined-net.vercel.app",
 		"repo": "private",
 		"descriptionTitle": "A website for DST Fiber LTD ",
-		"description": "Its built on Next.js . A fast and agile single page application.",
-		"imageOptions": [
-			{ "key": "size", 		"value": "large" }
-		],
-		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
-		],
+		"description": "The Dst Internet website is a dynamic and user-friendly platform designed to highlight the services and offerings of the internet service provider",
+		
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
 			{ "key": "react", 		"name": "React", 		"type": "devicon" },
@@ -99,16 +78,16 @@
 		]
 	},
 	{
-		"project":" www.dstfiber.co.ke ",
-		"url": "https://dstfiber.co.ke",
+		"project":" www.Kenire.co.ke ",
+		"url": "https://kenire.co.ke",
 		"repo": "private",
-		"descriptionTitle": "A website for DST Fiber LTD ",
-		"description": "Its built on Next.js . A fast and agile single page application.",
+		"descriptionTitle": "A corporate website For Kenire Business Solutions ",
+		"description": "Built with Wordpress , The Kenire Business Solutions Ltd website is a professional platform designed to showcase the Company offerings, ",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/" }
 		],
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
