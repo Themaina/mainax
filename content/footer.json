@@ -10,7 +10,11 @@
 			"link": "",
 			"note": "Checkout her other projects"
 		},
-		
+		{ 
+			"person": "Stephanie williams",
+			"link": "https://steiphy.com/",
+			"note": "A major inspiration to create websites"
+		},
 		{ 
 			"person": "Vercel - Platform",
 			"link": "https://vercel.com/docs",
