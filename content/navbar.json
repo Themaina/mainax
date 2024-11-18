@@ -9,6 +9,10 @@
 		"title": "Articles"
 	},
 	{
+		"url": "/portfolio",
+		"title": "Gallery"
+	},
+	{
 		"url": "/projects",
 		"title": "Projects"
 	}

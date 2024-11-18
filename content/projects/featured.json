@@ -9,7 +9,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/" }
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/Screenshot 2024-0227-17 011601.png" }
 		],
 		
 		"stack": [
@@ -36,7 +36,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/" }
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/patnan.png" }
 		],
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
@@ -51,16 +51,16 @@
 		]
 	},
 	{
-		"project": " www.hinatapharmacy.co.ke",
+		"project": " www.invexia.co.ke",
 		"url": "https://hinatapharmacy.co.ke",
 		"repo": "private",
-		"descriptionTitle": "An E-commerce platform for Hinata Pharmacy .",
+		"descriptionTitle": "An real estate listing website platform for invexia ltd .",
 		"description": "Built on Next.js and the server side with Laravel 8.0 . A complete E-commerce platform  with a mobile app",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/" }
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/invexia.pngnp" }
 		],
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
@@ -84,7 +84,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/" }
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/Screenshot 2026784-07-17 011253.png" }
 		],
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
@@ -103,7 +103,7 @@
 		"url": "https://kenire.co.ke",
 		"repo": "private",
 		"descriptionTitle": "A corporate website For Kenire Business Solutions ",
-		"description": "Built with Wordpress ,the Kenire Business Solutions Ltd website is a professional platform designed to showcase the Company offerings, ",
+		"description": "Built with Wordpress, the Kenire Business Solutions Ltd website is a professional platform designed to showcase the Companys Services. ",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],

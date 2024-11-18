@@ -26,7 +26,7 @@ export default function Career() {
 				<SectionTitle
 					title="Experience"
 					preTitle="Career"
-					subTitle="I am current managing, designing, and developing all consumer and digital product initiatives at crosstech.ke."
+					subTitle="I am currently "
 				/>
 				<section className={career.area}>
 					<article className={career.company}>

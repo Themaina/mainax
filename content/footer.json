@@ -6,19 +6,14 @@
 			"note": "My first client."
 		},
 		{ 
-			"person": "Ruth Mwende - Tester",
+			"person": "Ruth Mwende - Mentor",
 			"link": "",
-			"note": "Checkout her other projects"
+			"note": "A major inspiration to create software"
 		},
 		{ 
-			"person": "Stephanie williams",
-			"link": "https://steiphy.com/",
+			"person": "Margret ",
+			"link": "https://invexia.co.ke/",
 			"note": "A major inspiration to create websites"
-		},
-		{ 
-			"person": "Vercel - Platform",
-			"link": "https://vercel.com/docs",
-			"note": "Host your own Next.js project for free!"
 		}
 	],
 
