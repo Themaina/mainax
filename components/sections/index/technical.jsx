@@ -28,22 +28,22 @@ export default function Technical() {
 		<Section classProp={`${about.section} borderBottom`}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="Technical"
-					preTitle="Hardskills"
-					subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
+					title="Proficiencies"
+					preTitle="My Expertise at a Glance"
+					subTitle="I'd describe myself as a 'Porsche' in tech "
 				/>
 				<section className={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
 						<CopyBlock 
 							title="Polymath foundations"
 							icon={[ 'fat', 'chart-network' ]}
-							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends."
+							copy="With expertise spanning Server Technology, Computer Technology, Software Development, and Web Design, my diverse skill set reflects a passion for solving problems across multiple fields. By combining technical precision with creative solutions, I bring innovation and adaptability to every challenge."
 							iconClass={about.icon}
 							containerClass={about.container}
 						/>
 						<BadgesBlock 
-							title="Software I love to work with" 
-							copy="With a few years of experience in creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							title="Software Expertise" 
+							copy="With a 5+ years of experience in creating digital assets,I leverage a broad spectrum of programming languages and tools to build efficient, scalable, and creative solutions. Whether it’s web development, app creation, or system optimization, my expertise ensures high-quality results every time."
 							list={software}
 							block="software" 
 							fullContainer="fullContainer"
@@ -52,9 +52,9 @@ export default function Technical() {
 							headerIcon={about.icon} 
 						/>
 						<BadgesBlock 
-							title="Technologies I love to build with" 
-							copy="I enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. No project is too challenging for me."
-							list={tech} 
+							title="Technologies I build with" 
+							copy="As a creative professional, I thrive by using a wide range of tools languages and frameworks to bring ideas to life."
+							list={tech}
 							block="tech"
 							fullContainer="fullContainer" 
 							icon="laptop-code"

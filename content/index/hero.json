@@ -20,12 +20,12 @@
 	"buttons": {
 		"primary": {
 			"title": "Contact Me",
-			"url": "",
-			"leaveSite": false
+			"url": "https://wa.me/254797049888/",
+			"leaveSite": "false"
 		},
 		"secondary": {
-			"title": "LinkedIn",
-			"url": "https://www.linkedin.com/in/themainax/",
+			"title": "Linktree",
+			"url": "https://linktr.ee/themaina/",
 			"leaveSite": "true"
 		}
 	}
