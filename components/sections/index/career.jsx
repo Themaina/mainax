@@ -99,7 +99,7 @@ export default function Career() {
                                     <h4>Apr 2022 - Present</h4>
                                 </span>
                                 <p>
-                                As the lead developer, I oversee the end-to-end lifecycle of the company's e-commerce platform. My role involves managing all online operations, ensuring a seamless and efficient digital experience for our customers.
+                                As the lead developer, I oversee the end-to-end lifecycle of the company&apos;s e-commerce platform. My role involves managing all online operations, ensuring a seamless and efficient digital experience for our customers.
                                 </p>
                                 <ul className={career.list}>
                                     <li>

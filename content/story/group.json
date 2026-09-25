@@ -1,0 +1,8 @@
+[
+	{ "name": "Maina Softwares", "glyph": "{ }", "size": "wide", "text": "The flagship. Where the group's software and AI are built and deployed for businesses. Home of Orderly, Maina CMS and Link Me Up." },
+	{ "name": "Maina AI", "glyph": "◎", "text": "AI trained to take on real business operations." },
+	{ "name": "Maina Compute", "glyph": "▦", "text": "The infrastructure that keeps the cloud services online." },
+	{ "name": "Maina Energy", "glyph": "ϟ", "text": "Power for the compute. Uptime starts at the socket." },
+	{ "name": "Airtaker", "glyph": "⌂", "size": "wide", "status": "Launching soon", "text": "Built to redefine the Kenyan property market, with automated M-Pesa rent collection, digital invoicing and real-time reporting for landlords and tenants." },
+	{ "name": "Maina Racing", "glyph": "◢", "status": "Future", "text": "Because why not." }
+]
