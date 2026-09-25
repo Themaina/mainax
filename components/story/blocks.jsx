@@ -195,3 +195,27 @@ export function Marquee({ items, reverse }) {
 		</div>
 	)
 }
+
+/**
+ * Vertical timeline whose spine draws itself as it scrolls.
+ */
+export function Timeline({ items }) {
+	const ref = useRef(null)
+	const { scrollYProgress } = useScroll({ target: ref, offset: ['start 0.7', 'end 0.6'] })
+	return (
+		<div ref={ref} className={css.timeline}>
+			<m.span className={css.timelineSpine} style={{ scaleY: scrollYProgress }} />
+			{items.map((it, i) => (
+				<Reveal key={it.title} className={`${css.tlItem} ${it.now ? css.tlNow : ''}`} delay={.05}>
+					<span className={css.tlDot} />
+					<div className={css.tlWhen}>{it.when}<em>{it.kind}</em></div>
+					<div className={css.tlCard}>
+						<h3>{it.title}</h3>
+						{it.sub && <h4>{it.sub}</h4>}
+						<p>{it.text}</p>
+					</div>
+				</Reveal>
+			))}
+		</div>
+	)
+}

@@ -269,6 +269,166 @@
 	100% { transform: scaleY(1); opacity: 0; }
 }
 
+// Documentary-style name tag
+.lowerThird {
+	position: absolute;
+	z-index: 3;
+	left: var(--pad);
+	bottom: 2.5rem;
+	display: flex;
+	align-items: stretch;
+	gap: .9rem;
+	pointer-events: none;
+
+	i { width: 4px; border-radius: 2px; background: var(--red); }
+	div { display: flex; flex-direction: column; gap: .2rem; }
+	b { font-size: 1.05rem; font-weight: 700; letter-spacing: .01em; }
+	span { font-family: 'Fira Code', monospace; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); }
+
+	@media (max-width: 640px) {
+		bottom: 1.25rem;
+		left: 1rem;
+		padding: .6rem .8rem;
+		border-radius: .6rem;
+		background: rgba(5, 5, 5, .72);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		span { font-size: .6rem; }
+	}
+}
+
+@media (max-width: 640px) {
+	.scrollHint { display: none; }
+	.heroTitle br { display: none; }
+	.heroCopy { text-shadow: 0 2px 24px rgba(0, 0, 0, .95); }
+	.heroLeft {
+		top: auto;
+		bottom: 4vh;
+		transform: none;
+		max-width: none;
+		right: 0;
+	}
+}
+
+// Labels pinned to the exploding phone layers (positioned from three.js)
+.layerLabel {
+	position: absolute;
+	z-index: 2;
+	top: 0; left: 0;
+	display: flex;
+	flex-direction: column;
+	padding-left: 1.4rem;
+	pointer-events: none;
+	will-change: transform, opacity;
+	margin-top: -.9rem;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0; top: .55rem;
+		width: 1rem; height: 1px;
+		background: var(--red-hot);
+		box-shadow: 0 0 6px var(--red-hot);
+	}
+
+	b { font-size: .95rem; font-weight: 700; color: #fff; white-space: nowrap; }
+	span { font-family: 'Fira Code', monospace; font-size: .72rem; color: var(--dim); white-space: nowrap; }
+
+	@media (max-width: 640px) {
+		b { font-size: .75rem; }
+		span { display: none; }
+	}
+}
+
+// ---------- Timeline ----------
+
+.timeline {
+	position: relative;
+	max-width: 64rem;
+	margin: 0 auto clamp(4rem, 9vw, 8rem);
+	padding-left: 2.5rem;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: .45rem; top: 0; bottom: 0;
+		width: 2px;
+		background: var(--line);
+	}
+}
+
+.timelineSpine {
+	position: absolute;
+	left: .45rem; top: 0; bottom: 0;
+	width: 2px;
+	background: linear-gradient(var(--red-hot), var(--red));
+	box-shadow: 0 0 12px rgba(255, 45, 31, .6);
+	transform-origin: top;
+}
+
+.tlItem {
+	position: relative;
+	display: grid;
+	grid-template-columns: 11rem 1fr;
+	gap: 1.5rem;
+	padding: 1.25rem 0;
+
+	@media (max-width: 700px) { grid-template-columns: 1fr; gap: .5rem; }
+}
+
+.tlDot {
+	position: absolute;
+	left: -2.5rem;
+	top: 1.65rem;
+	width: 1.05rem; height: 1.05rem;
+	margin-left: -.05rem;
+	border-radius: 50%;
+	background: var(--bg);
+	border: 2px solid var(--red);
+}
+
+.tlNow .tlDot {
+	background: var(--red-hot);
+	box-shadow: 0 0 0 6px rgba(255, 45, 31, .2), 0 0 20px var(--red-hot);
+}
+
+.tlWhen {
+	display: flex;
+	flex-direction: column;
+	gap: .3rem;
+	padding-top: 1.25rem;
+	font-family: 'Fira Code', monospace;
+	font-size: .95rem;
+	font-weight: 600;
+	color: var(--text);
+
+	em {
+		font-style: normal;
+		font-size: .68rem;
+		letter-spacing: .14em;
+		text-transform: uppercase;
+		color: var(--red-hot);
+	}
+
+	@media (max-width: 700px) { padding-top: 1.1rem; flex-direction: row; align-items: baseline; gap: .75rem; }
+}
+
+.tlCard {
+	padding: 1.25rem 1.5rem;
+	border-radius: 1.25rem;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	transition: border-color .4s;
+
+	&:hover { border-color: rgba(225, 6, 0, .5); }
+
+	h3 { font-size: 1.35rem !important; font-weight: 800; letter-spacing: -.02em !important; color: var(--text) !important; }
+	h4 { margin-top: .2rem; font-size: .8rem !important; letter-spacing: .02em; text-transform: none; color: #ffb3ad; font-weight: 500; }
+	p { margin-top: .5rem; color: var(--dim); font-size: 1rem !important; }
+
+	.tlNow & { border-color: rgba(225, 6, 0, .6); background: linear-gradient(160deg, rgba(225, 6, 0, .14), var(--surface) 60%); }
+}
+
 // ---------- Chapters ----------
 
 .chapter {
@@ -323,7 +483,12 @@
 	color: var(--text);
 }
 
-.bigQuote span:nth-last-child(-n + 6) { color: var(--red-hot); }
+.bigQuote span:nth-last-child(-n + 7) { color: var(--red-hot); }
+
+.vision {
+	margin-top: clamp(4rem, 9vw, 8rem);
+	span:nth-child(-n + 2) { color: var(--red-hot); }
+}
 
 // ---------- Microscope ----------
 
@@ -514,6 +679,17 @@
 	letter-spacing: .12em;
 	text-transform: uppercase;
 	color: var(--red-hot);
+}
+
+.buildShot {
+	margin-top: 1rem;
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+	object-position: top;
+	border-radius: .9rem !important;
+	border: 1px solid var(--line);
+	filter: none !important;
 }
 
 .buildNum {

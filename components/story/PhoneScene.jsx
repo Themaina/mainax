@@ -7,7 +7,7 @@ import { useEffect, useRef } from 'react'
  *
  * @param {MotionValue} progress 0..1 scroll progress of the hero section
  */
-export default function PhoneScene({ progress, className }) {
+export default function PhoneScene({ progress, className, labelClass }) {
 
 	const mount = useRef(null)
 
@@ -183,6 +183,24 @@ export default function PhoneScene({ progress, className }) {
 				return { mat: mesh.material, base: mesh.material.opacity }
 			})
 
+			// ---------- Layer call-outs (HTML labels pinned to the 3D layers) ----------
+			const labelDefs = [
+				[glass, 'Glass', 'the first thing I cracked', 1.3],
+				[display, 'Display', 'millions of tiny lights', .75],
+				[frame, 'Frame', 'the skeleton', -1.45],
+				[board, 'Logic board', 'where the magic lives', .2],
+				[battery, 'Battery', 'the heartbeat', -.3],
+				[back, 'Back glass', 'Ferrari red, obviously', -1.4],
+			].map(([mesh, name, note, y], i) => {
+				const div = document.createElement('div')
+				div.className = labelClass || ''
+				div.innerHTML = `<b>${name}</b><span>${note}</span>`
+				div.style.opacity = 0
+				el.appendChild(div)
+				return { mesh, div, local: new THREE.Vector3(W / 2 + .04, y - (mesh === board ? .78 : mesh === battery ? -.55 : 0), 0), i }
+			})
+			const tmp = new THREE.Vector3()
+
 			// ---------- Ember particles ----------
 			const N = 500
 			const pos = new Float32Array(N * 3)
@@ -200,13 +218,14 @@ export default function PhoneScene({ progress, className }) {
 			const socWorld = new THREE.Vector3()
 			const look = new THREE.Vector3()
 			const camFrom = new THREE.Vector3(0, 0, 9)
-			let smooth = 0, raf = 0, visible = true
+			let smooth = 0, raf = 0, visible = true, portrait = false
 			const clock = new THREE.Clock()
 
 			const onResize = () => {
 				const w = el.clientWidth, h = el.clientHeight
 				renderer.setSize(w, h); camera.aspect = w / h
-				camera.position.z = camFrom.z = w < h ? 12 : 9
+				portrait = w < h
+				camera.position.z = camFrom.z = portrait ? 12 : 9
 				camera.updateProjectionMatrix()
 			}
 			onResize()
@@ -218,9 +237,11 @@ export default function PhoneScene({ progress, className }) {
 			const tick = () => {
 				raf = requestAnimationFrame(tick)
 				if (!visible) return
-				const t = clock.getElapsedTime()
+				const dt = Math.min(clock.getDelta(), .1)
+				const t = clock.elapsedTime
 				const target = progress ? progress.get() : 0
-				smooth += (target - smooth) * (reduced ? 1 : .08)
+				// Frame-rate independent easing towards the scroll position
+				smooth += (target - smooth) * (reduced ? 1 : 1 - Math.exp(-dt * 5))
 				const p = smooth
 
 				const explode = ease(clamp((p - .18) / .32))   // 0.18 → 0.50
@@ -232,7 +253,9 @@ export default function PhoneScene({ progress, className }) {
 				const rise = ease(clamp(p / .18))
 				phone.position.y = lerp(-1.45, 0, rise) + Math.sin(t * .8) * .05 * (1 - explode)
 				phone.scale.setScalar(lerp(.82, 1, rise))
-				phone.position.x = lerp(0, .3, explode) * (1 - dive)
+				phone.position.x = lerp(0, portrait ? 0 : .3, explode) * (1 - dive)
+				// On tall screens lift the opened phone clear of the caption below it
+				if (portrait) phone.position.y += .9 * explode * (1 - dive)
 
 				layers.forEach(m => { m.position.z = m.userData.z + m.userData.spread * explode })
 
@@ -255,6 +278,17 @@ export default function PhoneScene({ progress, className }) {
 				embers.rotation.y = t * .02
 				embers.position.y = Math.sin(t * .2) * .2
 
+				scene.updateMatrixWorld()
+				const w = el.clientWidth, h = el.clientHeight
+				labelDefs.forEach(({ mesh, div, local, i }) => {
+					const o = clamp((explode - .35 - i * .08) / .25) * (1 - clamp(dive * 4))
+					div.style.opacity = o
+					if (o <= 0) return
+					tmp.copy(local); mesh.localToWorld(tmp); tmp.project(camera)
+					const x = Math.min(w - 150, (tmp.x * .5 + .5) * w)
+					div.style.transform = `translate(${x.toFixed(1)}px, ${((-tmp.y * .5 + .5) * h).toFixed(1)}px)`
+				})
+
 				renderer.render(scene, camera)
 			}
 			tick()
@@ -270,6 +304,7 @@ export default function PhoneScene({ progress, className }) {
 				pmrem.dispose()
 				renderer.dispose()
 				renderer.domElement.remove()
+				labelDefs.forEach(l => l.div.remove())
 			}
 		})()
 
