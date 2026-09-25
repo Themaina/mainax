@@ -7,22 +7,24 @@ import Badges       from '../../utils/badge.list.util'; // Import Badges
 import looking      from '../../../styles/sections/index/looking.module.scss';
 import section      from '../../../styles/blocks/section.title.module.scss'
 
-// Define your tech stack
-const devOpsTools = [
-    { key: 'docker', name: 'Docker', type: 'devicon' },
-    { key: 'kubernetes', name: 'Kubernetes', type: 'devicon' },
-    { key: 'aws', name: 'AWS', type: 'devicon' },
-    { key: 'jenkins', name: 'Jenkins', type: 'devicon' },
-    { key: 'nginx', name: 'Nginx', type: 'devicon' },
-    { key: 'git', name: 'Git', type: 'devicon' },
-    { key: 'nodejs', name: 'NodeJS', type: 'devicon' },
-    { key: 'postgresql', name: 'PostgreSQL', type: 'devicon' },
-	{ key: 'linux', name: 'Linux', type: 'devicon' },
-	{ key: 'php', name: 'PHP', type: 'devicon' },
+// Key technologies across the whole stack: silicon to cloud
+const keyTech = [
+    { key: 'php', name: 'PHP', type: 'devicon' },
     { key: 'laravel', name: 'Laravel', type: 'devicon' },
-    { key: 'composer', name: 'Composer', type: 'devicon' },
-    { key: 'mysql', name: 'MySQL', type: 'devicon' },
-    
+    { key: 'javascript', name: 'JavaScript', type: 'devicon' },
+    { key: 'typescript', name: 'TypeScript', type: 'devicon' },
+    { key: 'react', name: 'React', type: 'devicon' },
+    { key: 'nextjs', name: 'NextJS', type: 'devicon' },
+    { key: 'nodejs', name: 'NodeJS', type: 'devicon' },
+    { key: 'python', name: 'Python', type: 'devicon' },
+    { key: 'mysql', name: 'MySQL / MariaDB', type: 'devicon' },
+    { key: 'redis', name: 'Redis', type: 'devicon' },
+    { key: 'firebase', name: 'Firebase', type: 'devicon' },
+    { key: 'nginx', name: 'Nginx', type: 'devicon' },
+    { key: 'linux', name: 'Linux', type: 'devicon' },
+    { key: 'docker', name: 'Docker', type: 'devicon' },
+    { key: 'git', name: 'Git', type: 'devicon' },
+    { key: 'arduino', name: 'Arduino', type: 'devicon' },
 ];
 
 
@@ -34,34 +36,32 @@ export default function Looking() {
                 <h2 className={looking.json}>specializations: &#123;</h2>
                 
                 <h2 className={looking.jsonSub}>
-                    <span className={looking.highlight}>devOps</span>
+                    <span className={looking.highlight}>aiEngineering</span>
                 </h2>
                 <h2 className={looking.jsonSub}>
-                    <span className={looking.highlight2}>cybersecurity</span>
+                    <span className={looking.highlight2}>fullStackDevelopment</span>
                 </h2>
                 <h2 className={looking.jsonSub}>
-                    <span className={looking.highlight}>backendDevelopment</span>
+                    <span className={looking.highlight}>hardwareAndElectronics</span>
                 </h2>
                 <h2 className={looking.jsonSub}>
                     <span className={looking.highlight2}>serverInfrastructure</span>
                 </h2>
+                <h2 className={looking.jsonSub}>
+                    <span className={looking.highlight}>technicalLeadership</span>
+                </h2>
                 
                 <h2 className={looking.json}>&#125;</h2>
 
-                {/* --- SUGGESTED ADDITIONS START HERE --- */}
-
                 <div className={looking.techContainer}>
                     <h3>Key Technologies</h3>
-                    <Badges list={devOpsTools} block="stack" />
+                    <Badges list={keyTech} block="stack" />
                 </div>
                 
                 <div className={looking.ctaContainer}>
                      
-                     <a href="/path/to/your/cv.pdf" className="button secondary" target="_blank" rel="noopener noreferrer">Download CV</a>
+                    <a href="https://github.com/Themaina" className="button secondary" target="_blank" rel="noopener noreferrer">See my work on GitHub</a>
                 </div>
-
-                 {/* --- SUGGESTED ADDITIONS END HERE --- */}
-
             </Container>
         </Section>
     )

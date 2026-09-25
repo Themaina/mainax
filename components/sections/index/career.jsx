@@ -29,6 +29,52 @@ export default function Career() {
                     subTitle="A timeline of my professional and technical journey."
                 />
                 <section className={career.area}>
+                    {/* Orderly Experience */}
+                    <article className={career.company}>
+                        <div className={career.companyContent}>
+                            <span className={career.companyHeader}>
+                                <h3>Orderly</h3>
+                                <h4>Tech Lead</h4>
+                                <h4>2025 - Present</h4>
+                                <h5>Nairobi, Kenya</h5>
+                            </span>
+                            <p>
+                            Orderly is a restaurant operating system covering customer ordering, point-of-sale, kitchen display, tableside service, back-office management and delivery dispatch, with an AI copilot built in.
+                            </p>
+                        </div>
+                        <div className={career.companyAlt}></div>
+                    </article>
+
+                    <article className={career.companyPositions}>
+                        <div className={career.position}>
+                            <div className={career.positionContent}>
+                                <span className={career.positionHeader}>
+                                    <h3>Tech Lead &amp; AI Architect</h3>
+                                    <h4>2025 - Present</h4>
+                                </span>
+                                <p>
+                                I lead the technical direction of the platform across its web, mobile and desktop apps: architecture, infrastructure, payments, compliance and AI.
+                                </p>
+                                <ul className={career.list}>
+                                    <li>
+                                        Designed an update-safe module architecture so custom features survive upstream platform upgrades.
+                                        <span className={career.subList}><span className={career.bullet}></span>Shipped M-Pesa, Paystack, KRA eTIMS, OTP and inventory modules.</span>
+                                    </li>
+                                    <li>
+                                        Built Orderly AI, a multi-provider LLM engine with tool-calling agents for customers, kitchens and admins.
+                                        <span className={career.subList}><span className={career.bullet}></span>Includes guardrails, encrypted keys, usage metering, audit logs and automated watchers for stuck orders.</span>
+                                    </li>
+                                    <li>
+                                        Run production infrastructure on Linux, nginx, Cloudflare, MariaDB and Redis.
+                                        <span className={career.subList}><span className={career.bullet}></span>Delivered a single design system across five product surfaces.</span>
+                                    </li>
+                                </ul>
+                                <Badges list={orderlyStack} block="stack" fullContainer="fullContainer"/>
+                            </div>
+                            <div className={career.positionAlt}></div>
+                        </div>
+                    </article>
+
                     {/* Crosstech Experience */}
                     <article className={career.company}>
                         <div className={career.companyContent}>
@@ -49,7 +95,7 @@ export default function Career() {
                         <div className={career.position}>
                             <div className={career.positionContent}>
                                 <span className={career.positionHeader}>
-                                    <h3>E-commerce Software Developer</h3>
+                                    <h3>Lead E-commerce Developer</h3>
                                     <h4>Apr 2022 - Present</h4>
                                 </span>
                                 <p>
@@ -102,8 +148,9 @@ export default function Career() {
                                 <h5>Nairobi, Kenya</h5>
                             </span>
                             <p>
-                            Diagnosed, troubleshooted, and repaired a wide variety of electronic devices, including computers, gaming consoles, and mobile phones. This role provided me with a deep, foundational understanding of hardware components, system diagnostics, and effective problem-solving.
+                            Diagnosed, troubleshot and repaired a wide range of electronic devices, including computers, gaming consoles and mobile phones, down to board and component level. This is where my engineering started: a deep, practical understanding of hardware, system diagnostics and methodical problem-solving that I still bring to every software project.
                             </p>
+                            <Badges list={hardwareSkills} block="stack" fullContainer="fullContainer"/>
                         </div>
                         <div className={career.companyAlt}></div>
                     </article>
@@ -112,6 +159,28 @@ export default function Career() {
         </Section>
     )
 }
+
+const orderlyStack = [
+    { key: 'php',           name: 'PHP',                type: 'devicon' },
+    { key: 'yii',           name: 'Yii',                type: 'devicon' },
+    { key: 'javascript',    name: 'JavaScript',         type: 'devicon' },
+    { key: 'vuejs',         name: 'Vue / Quasar',       type: 'devicon' },
+    { key: 'mysql',         name: 'MariaDB',            type: 'devicon' },
+    { key: 'redis',         name: 'Redis',              type: 'devicon' },
+    { key: 'firebase',      name: 'Firebase',           type: 'devicon' },
+    { key: 'nginx',         name: 'Nginx',              type: 'devicon' },
+    { key: 'linux',         name: 'Linux',              type: 'devicon' },
+    { key: 'robot',         name: 'LLMs / AI Agents',   type: 'fad' },
+];
+
+const hardwareSkills = [
+    { key: 'microchip',         name: 'Board-level Repair', type: 'fad' },
+    { key: 'fire-flame-curved', name: 'Soldering',          type: 'fad' },
+    { key: 'mobile-screen',     name: 'Phones',             type: 'fad' },
+    { key: 'gamepad',           name: 'Consoles',           type: 'fad' },
+    { key: 'computer',          name: 'Computers',          type: 'fad' },
+    { key: 'wave-square',       name: 'Diagnostics',        type: 'fad' },
+];
 
 const fullStack = [
     { key: 'javascript',    name: 'JavaScript',         type: 'devicon' },
@@ -138,22 +207,4 @@ const freelanceStack = [
     { key: 'react',         name: 'React',              type: 'devicon' },
     { key: 'wordpress',     name: 'WordPress',          type: 'devicon' },
     { key: 'git',           name: 'Git',                type: 'devicon' },
-];
-
-// Note: The 'stack' constant was identical to 'fullStack' and not used, 
-// so it can be removed if not used elsewhere in your project.
-const stack = [
-    { key: 'javascript',    name: 'JavaScript',         type: 'devicon' },
-    { key: 'nodejs',        name: 'NodeJS',             type: 'devicon' },
-    { key: 'react',         name: 'React',              type: 'devicon' },
-    { key: 'nextjs',        name: 'NextJS',             type: 'devicon' },
-    { key: 'php',           name: 'PHP',                type: 'devicon' },
-    { key: 'wordpress',     name: 'WordPress',          type: 'devicon' },
-    { key: 'woocommerce',   name: 'WooCommerce',        type: 'devicon' },
-    { key: 'html5',         name: 'HTML5',              type: 'devicon' },
-    { key: 'css3',          name: 'CSS3',               type: 'devicon' },
-    { key: 'sass',          name: 'SASS',               type: 'devicon' },
-    { key: 'git',           name: 'Git',                type: 'devicon' },
-    { key: 'mysql',         name: 'MySQL',              type: 'devicon' },
-    { key: 'mongodb',       name: 'MongoDB',            type: 'devicon' },
 ];

@@ -28,7 +28,7 @@ export default function FeaturedProject({ content }, index) {
 	return (
 		<m.section 	
 			key={index}
-			className={css.project} 
+			className={`${css.project} ${images.length ? '' : css.textOnly}`} 
 			//framer-motion
 			ref={ref}
 			variants={container}
@@ -39,7 +39,7 @@ export default function FeaturedProject({ content }, index) {
 			<div className={css.details}>
 				<div className={css.projectHeader}>
 					<div className={css.header}>
-						<h3 className="highlight">{project}</h3><span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>	
+						<h3 className="highlight"><a href={url} target="_blank" rel="noopener noreferrer">{project}</a></h3><span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>	
 					</div>
 					<div className={css.description}>
 						<p><strong>{descriptionTitle}</strong> {description}</p>
@@ -53,7 +53,7 @@ export default function FeaturedProject({ content }, index) {
 				</div>
 			</div>
 
-			<div className={css.imageContainer}>
+			{ images.length > 0 && <div className={css.imageContainer}>
 				<span className={`${css.imageAnimationContainer}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
@@ -66,7 +66,7 @@ export default function FeaturedProject({ content }, index) {
 						)}
 					) }
 				</span>
-			</div>
+			</div> }
 		</m.section>
 	)
 }

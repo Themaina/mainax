@@ -30,7 +30,7 @@ export default function About() {
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					subTitle="I started at the repair bench, fixing phones, consoles and computers down to the component. That taught me how systems really work. I took that into software, then into leading teams and building with AI. Hardware, software, AI: I work across all three."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
@@ -39,20 +39,20 @@ export default function About() {
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 
-							title="Education"
+							title="Who I am"
 							containerClass={about.container}
 							iconClass={about.icon}
-							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner. Outside of work, I enjoy staying active through sports such as swimming and cycling. I am confident in my ability to bring passion and value to any project."
+							icon={[ 'fat', 'microchip' ]}
+							copy="I'm a tech lead based in Nairobi. Today I lead engineering on Orderly, a full restaurant operating system with an AI copilot built in, and I run the e-commerce platform at Crosstech. PHP and JavaScript are my home ground. I think in both circuits and code, so I can take a product from the device on the counter to the server it talks to and the AI model behind it. Outside of work I enjoy swimming and cycling."
 						/>
 						<BadgesBlock 
-							title="Reasearch and planning" 
+							title="How I lead" 
 							containerClass={about.container}
 							list={methods} 
 							fullContainer="fullContainer"
 							block="methods" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							copy="The part I enjoy most is planning a system's architecture: how the modules fit, how it survives updates, how it scales, and where AI can do useful work. I also mentor, review code, and give clients a straight answer on what will work."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>
@@ -64,10 +64,11 @@ export default function About() {
 }
 
 const methods 	= [
-	{ key: 'planet-moon', 		name: 'User Research', 		type: 'fad' },
-	{ key: 'qrcode', 			name: 'Digital Strategy', 	type: 'fad' },
-	{ key: 'window', 			name: 'Design Systems', 	type: 'fad' },
-	{ key: 'cubes', 			name: 'Product Strategy', 	type: 'far' },
-	{ key: 'layer-plus', 		name: 'Brand Strategy', 	type: 'fad' },
-	{ key: 'solar-system', 		name: 'Operations', 		type: 'fad' },
+	{ key: 'sitemap', 			name: 'System Architecture', 	type: 'fad' },
+	{ key: 'robot', 			name: 'AI Integration', 		type: 'fad' },
+	{ key: 'users', 			name: 'Team Leadership', 		type: 'fad' },
+	{ key: 'code-pull-request', name: 'Code Review', 			type: 'fad' },
+	{ key: 'window', 			name: 'Design Systems', 		type: 'fad' },
+	{ key: 'cubes', 			name: 'Product Strategy', 		type: 'far' },
+	{ key: 'solar-system', 		name: 'Operations', 			type: 'fad' },
 ]
