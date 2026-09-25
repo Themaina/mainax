@@ -30,20 +30,40 @@ export default function Technical() {
 				<SectionTitle
 					title="Proficiencies"
 					preTitle="My Expertise at a Glance"
-					subTitle="I'd describe myself as a 'Porsche' in tech "
+					subTitle="Hardware, software and AI, all under one roof."
 				/>
 				<section className={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
 						<CopyBlock 
-							title="Polymath foundations"
+							title="From electronics to code to AI"
 							icon={[ 'fat', 'chart-network' ]}
-							copy="With expertise spanning Server Technology, Computer Technology, Software Development, and Web Design, my diverse skill set reflects a passion for solving problems across multiple fields. By combining technical precision with creative solutions, I bring innovation and adaptability to every challenge."
+							copy="I work across the whole stack, from the circuit board up. I can diagnose a dead motherboard, stand up and harden a Linux server, write the PHP and JavaScript that runs on it, and connect a large language model that does real work for a business. Few engineers cover all of it. I do, and it lets me solve problems other people would pass along to someone else."
 							iconClass={about.icon}
 							containerClass={about.container}
 						/>
 						<BadgesBlock 
-							title="Software Expertise" 
-							copy="With a 5+ years of experience in creating digital assets,I leverage a broad spectrum of programming languages and tools to build efficient, scalable, and creative solutions. Whether it’s web development, app creation, or system optimization, my expertise ensures high-quality results every time."
+							title="AI Engineering" 
+							copy="I build AI into production products, not demos: tool-calling agents, multi-provider LLM engines with guardrails and audit logs, background watchers that catch problems early, and AI-assisted diagnostics. I also use AI coding tools every day to ship faster."
+							list={ai}
+							block="software" 
+							fullContainer="fullContainer"
+							icon="robot"
+							containerClass={about.container}
+							headerIcon={about.icon} 
+						/>
+						<BadgesBlock 
+							title="Hardware & Electronics" 
+							copy="Years at the repair bench, where I diagnosed and repaired computers, gaming consoles and mobile phones down to component level. That grounding in how hardware fails is why I debug software the way I do."
+							list={hardware}
+							block="software" 
+							fullContainer="fullContainer"
+							icon="microchip"
+							containerClass={about.container}
+							headerIcon={about.icon} 
+						/>
+						<BadgesBlock 
+							title="Tools I use" 
+							copy="With 5+ years building digital products, I use a wide set of tools to design, build and ship efficient, scalable solutions."
 							list={software}
 							block="software" 
 							fullContainer="fullContainer"
@@ -84,6 +104,27 @@ const software = [
 	{ key: 'premierepro',	name: 'Premiere Pro', 		type: 'devicon' },
 ]
 
+const ai = [
+	{ key: 'robot', 			name: 'Claude / Anthropic', 	type: 'fad' },
+	{ key: 'sparkles', 			name: 'OpenRouter', 			type: 'fad' },
+	{ key: 'brain', 			name: 'Gemini / Genkit', 		type: 'fad' },
+	{ key: 'screwdriver-wrench',name: 'LLM Tool Calling', 		type: 'fad' },
+	{ key: 'diagram-project', 	name: 'Agent Design', 			type: 'fad' },
+	{ key: 'shield-check', 		name: 'AI Guardrails & Audit', 	type: 'fad' },
+	{ key: 'terminal', 			name: 'Claude Code', 			type: 'fad' },
+]
+
+const hardware = [
+	{ key: 'microchip', 		name: 'Board-level Repair', 	type: 'fad' },
+	{ key: 'fire-flame-curved', name: 'Soldering & Rework', 	type: 'fad' },
+	{ key: 'mobile-screen', 	name: 'Phone Repair', 			type: 'fad' },
+	{ key: 'gamepad', 			name: 'Console Repair', 		type: 'fad' },
+	{ key: 'computer', 			name: 'PC & Laptop Repair', 	type: 'fad' },
+	{ key: 'wave-square', 		name: 'Diagnostics', 			type: 'fad' },
+	{ key: 'server', 			name: 'Servers & Networking', 	type: 'fad' },
+	{ key: 'cash-register', 	name: 'POS Hardware', 			type: 'fad' },
+]
+
 const tech	= [
 	{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
 	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
@@ -91,6 +132,12 @@ const tech	= [
 	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
 	{ key: 'jquery', 		name: 'jQuery', 			type: 'devicon' },
 	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
+	{ key: 'laravel', 		name: 'Laravel', 			type: 'devicon' },
+	{ key: 'typescript', 	name: 'TypeScript', 		type: 'devicon' },
+	{ key: 'vuejs', 		name: 'Vue', 				type: 'devicon' },
+	{ key: 'python', 		name: 'Python', 			type: 'devicon' },
+	{ key: 'redis', 		name: 'Redis', 				type: 'devicon' },
+	{ key: 'firebase', 		name: 'Firebase', 			type: 'devicon' },
 	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
 	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
 	{ key: "google",		name: "GA4/GTM", 			type: "devicon" },

@@ -17,9 +17,9 @@ export default function FeaturedProjects() {
 		<Section classProp={css.hasBg}>	
 			<Container spacing={'verticalXXXXLrg'}>
 				<SectionTitle
-					title="Featured Gigs"
-					preTitle=" Some of real world peojects ive done "
-					subTitle="Focused on the experience, driven by the engineering."
+					title="Featured Projects"
+					preTitle="Real-world work"
+					subTitle="Production systems I have led, built and shipped, from restaurant platforms to AI agents."
 				/> 				{
 				content.map( (data, index) => {
 					return (
@@ -30,9 +30,9 @@ export default function FeaturedProjects() {
 			</Container>
 			<div className={css.bgContainer}>
 				<span className={css.orbitalBg}>
-					<span class={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroLeft} ${css.heroOrbital}`}></span></span>
-					<span class={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroCenter}`}></span></span>
-					<span class={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroRight} ${css.heroOrbital}`}></span></span>
+					<span className={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroLeft} ${css.heroOrbital}`}></span></span>
+					<span className={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroCenter}`}></span></span>
+					<span className={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroRight} ${css.heroOrbital}`}></span></span>
 				</span>
 				<span className={css.afterGlowBg}></span>
 			</div>

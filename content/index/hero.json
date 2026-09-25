@@ -1,6 +1,6 @@
 {
 	"intro": {
-		"start": "const jina = ( name, passion ) =>",
+		"start": "const maina = ( hardware, software, ai ) =>",
 		"end": "Hello, my name is",
 		"speed": 60,
 		"deletionSpeed": 80,
@@ -12,10 +12,10 @@
 
 	"header": {
 		"name": "Alvin Maina.",
-		"usp": "I design and build Software."
+		"usp": "From circuit boards to AI."
 	},
 
-	"paragraph": "I am a full stack software developer and a digital creative.",
+	"paragraph": "Tech lead, full stack engineer and electronics technician. I build production systems in PHP and JavaScript, ship AI into real businesses, and still know my way around a soldering iron.",
 
 	"buttons": {
 		"primary": {
@@ -24,8 +24,8 @@
 			"leaveSite": "false"
 		},
 		"secondary": {
-			"title": "Linktree",
-			"url": "https://linktr.ee/themaina/",
+			"title": "GitHub",
+			"url": "https://github.com/Themaina",
 			"leaveSite": "true"
 		}
 	}

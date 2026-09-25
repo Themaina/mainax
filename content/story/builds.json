@@ -1,0 +1,11 @@
+[
+	{ "name": "Crosstech.ke", "tag": "E-commerce · Lead developer", "url": "https://crosstech.ke", "text": "A full e-commerce system for an electronics retailer, covering storefront, POS, affiliates, inventory, role-based access, SMS and M-Pesa.", "stack": ["Laravel", "React", "MySQL", "M-Pesa"] },
+	{ "name": "ByteDeals", "tag": "Marketplace", "url": "https://bytedeals.co.ke", "text": "An electronics and lifestyle marketplace with a product catalogue, order tracking and M-Pesa checkout.", "stack": ["Next.js", "Laravel", "MySQL"] },
+	{ "name": "Hinata Pharmacy", "tag": "Healthcare commerce", "url": "https://hinatapharmacy.co.ke", "text": "An online pharmacy with prescription uploads, inventory tracking and SMS order updates.", "stack": ["Laravel", "Vue", "MySQL"] },
+	{ "name": "Invexia", "tag": "Real estate", "url": "https://invexia.co.ke", "text": "A property listing platform with agent profiles and listings.", "stack": ["Laravel", "PHP 8.2", "MySQL"] },
+	{ "name": "Ukiyo LifeShop", "tag": "Lifestyle commerce", "url": "https://ukiyolifeshop.com", "text": "A multi-currency wellness store built for a global audience.", "stack": ["React", "Node.js", "MongoDB"] },
+	{ "name": "Celebrat", "tag": "E-commerce", "url": "https://celebrat.co.ke", "text": "An online store the business uses to drive sales and manage its catalogue.", "stack": ["Laravel", "MySQL"] },
+	{ "name": "DST Fiber", "tag": "ISP · First client", "url": "https://reimagined-net.vercel.app", "text": "The website for an internet service provider, and the first client he ever built for.", "stack": ["Next.js", "React"] },
+	{ "name": "Kenire", "tag": "Corporate", "url": "https://kenire.co.ke", "text": "A corporate website for Kenire Business Solutions.", "stack": ["WordPress", "PHP"] },
+	{ "name": "Open source", "tag": "Public on GitHub", "url": "https://github.com/Themaina", "text": "A free M-Pesa gateway and TikTok, Instagram and Facebook feed plugins for Botble stores, plus an AI device-diagnostic tool.", "stack": ["Laravel", "Next.js", "Gemini"] }
+]
