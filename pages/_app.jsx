@@ -25,6 +25,8 @@ import '../node_modules/devicon/devicon.min.css'
 import '../styles/css/variables.css'
 import '../styles/css/global.css'
 
+import Head from 'next/head';
+
 /**
  * _app.jsx
  *
@@ -32,12 +34,20 @@ import '../styles/css/global.css'
  * @param {?} pageProps
  * @returns
  */
+// Google Search Console ownership tag, needed on every page (the homepage especially)
+const siteVerification = (
+	<Head>
+		<meta name="google-site-verification" content="F96bEq-bQoEDVC43s7LA0e_v1-9toZecHcmU3ySCR1A" />
+	</Head>
+)
+
 export default function MyApp({ Component, pageProps }) {
 
 	// Pages that bring their own chrome (e.g. the story homepage) skip the navbar/footer
 	if (Component.bareLayout) {
 		return (
 			<LazyMotion features={domAnimation}>
+				{siteVerification}
 				<Component {...pageProps} />
 				<Analytics />
 			</LazyMotion>
@@ -46,6 +56,7 @@ export default function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
+		{siteVerification}
 		<LazyMotion features={domAnimation}>
 			<Layout>
 				<Component {...pageProps} />
