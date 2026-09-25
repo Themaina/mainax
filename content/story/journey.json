@@ -1,0 +1,13 @@
+[
+	{ "when": "2015 – 2019", "kind": "Education", "title": "Nairobi School", "text": "High school. The place where curiosity picked up some discipline." },
+	{ "when": "2019 – 2025", "kind": "Education", "title": "KCA University", "sub": "BSc Software Development", "text": "Algorithms, systems, databases and software engineering. The theory behind the sorcery." },
+	{ "when": "2020 – 2021", "kind": "Hardware", "title": "Dexters Electronics", "sub": "Electronics repair expert", "text": "Microsoldering and board-level repair on phones, consoles and laptops." },
+	{ "when": "Self-taught", "kind": "Certification", "title": "The Odin Project", "sub": "Full stack curriculum", "text": "JavaScript, Node.js and React, learned by building." },
+	{ "when": "Cloud", "kind": "Certification", "title": "AWS Training", "sub": "Cloud Practitioner Essentials · Architecting on AWS", "text": "The foundations of running software at scale." },
+	{ "when": "2021", "kind": "Software", "title": "Crosstech", "sub": "Full stack developer", "text": "Led the e-commerce platform, from storefront to POS to M-Pesa." },
+	{ "when": "2022", "kind": "Community", "title": "African Tech Community", "sub": "Contributor", "text": "Giving back to the ecosystem that taught me." },
+	{ "when": "2023", "kind": "Software", "title": "Independent", "sub": "Freelance engineer", "text": "10+ web and mobile projects, with Stripe, M-Pesa and PayPal integrations." },
+	{ "when": "June 2024", "kind": "Founder", "title": "Orderly", "sub": "Founder & architect", "text": "A restaurant operating system, built from zero." },
+	{ "when": "2025", "kind": "AI", "title": "Orderly AI · Maina AI", "sub": "Graduated from KCA University", "text": "Agents that run real business operations." },
+	{ "when": "Now", "kind": "Founder", "title": "Maina Group", "sub": "Director & CEO", "text": "Two startups, one main company, and a plan to build an African tech giant.", "now": true }
+]
