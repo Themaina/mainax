@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { m, useScroll, useTransform, useSpring } from 'framer-motion'
 
 import PhoneScene from '../components/story/PhoneScene'
+import LaptopScene from '../components/story/LaptopScene'
 import { Reveal, ChapterTitle, ScrollText, HorizontalGallery, CircuitScope, NeuralNet, Rack, Marquee, Timeline } from '../components/story/blocks'
 
 import css from '../styles/story/story.module.scss'
@@ -30,6 +31,8 @@ export default function Story() {
 				<meta property="og:title" content="Alvin Maina | It all started with a simple question" />
 				<meta property="og:description" content="How one question about phones led me to hardware, software, AI and Maina Group." />
 				<meta name="theme-color" content="#050505" />
+				<link rel="icon" type="image/png" sizes="32x32" href="/favicon/maina-32.png" />
+				<link rel="apple-touch-icon" href="/favicon/maina-180.png" />
 			</Head>
 			<style jsx global>{`
 				#__next { overflow-x: clip; }
@@ -38,7 +41,7 @@ export default function Story() {
 
 			<m.div className={css.progress} style={{ scaleX: bar }} />
 			<nav className={css.nav}>
-				<a href="#top" className={css.brand}>MAINA<span>.</span></a>
+				<a href="#top" className={css.brand}><img src="/img/story/logo-light.png" alt="" width="28" height="28" />MAINA<span>.</span></a>
 				<div className={css.navLinks}>
 					<a href="#bench">Hardware</a>
 					<a href="#journey">Journey</a>
@@ -52,6 +55,7 @@ export default function Story() {
 			<Hero />
 			<Bench />
 			<Journey />
+			<Laptop />
 			<Code />
 			<Architect />
 			<Frontier />
@@ -159,6 +163,34 @@ function Journey() {
 			<Timeline items={journey} />
 
 			<ScrollText text="My curiosity always got the better of me. Every answer came with a better question, so I kept going: deeper into the code, deeper into the systems, deeper into how it all connects." />
+		</section>
+	)
+}
+
+/* ------------------------------------------------------------------ */
+
+function Laptop() {
+	const ref = useRef(null)
+	const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] })
+	const c1 = useTransform(scrollYProgress, [0, .06, .24, .3], [0, 1, 1, 0])
+	const c2 = useTransform(scrollYProgress, [.34, .42, .62, .68], [0, 1, 1, 0])
+	const c3 = useTransform(scrollYProgress, [.74, .82, 1], [0, 1, 1])
+	return (
+		<section ref={ref} className={css.laptop}>
+			<div className={css.heroSticky}>
+				<LaptopScene progress={scrollYProgress} className={css.heroCanvas} />
+				<m.div className={css.heroCopy} style={{ opacity: c1 }}>
+					<span className={css.eyebrow}>Same curiosity, new tools</span>
+					<h2 className={css.heroTitleSm}>The soldering iron became a keyboard.</h2>
+				</m.div>
+				<m.div className={`${css.heroCopy} ${css.heroBottom}`} style={{ opacity: c2 }}>
+					<h2 className={css.heroTitleSm}>I stopped fixing the machine.</h2>
+					<p className={css.heroSub}>I started telling it what to do.</p>
+				</m.div>
+				<m.div className={`${css.heroCopy} ${css.heroBottom}`} style={{ opacity: c3 }}>
+					<p className={css.heroSub}>Real code from Orderly AI, the agent that runs a restaurant kitchen.</p>
+				</m.div>
+			</div>
 		</section>
 	)
 }
@@ -283,6 +315,18 @@ function Group() {
 			<ChapterTitle kicker="And here I am" title="Two startups. One company. Everything tech.">
 				Orderly and Airtaker are my startups. Maina Group is the main company, and it does pretty much everything in tech. I&apos;m the Director and CEO. Some days, the overlord.
 			</ChapterTitle>
+
+			<div className={css.team}>
+				<Reveal className={css.teamPhoto}>
+					<img src="/img/story/team.jpg" alt="Alvin Maina and Nba Ngure of Maina Group" width="900" height="1517" loading="lazy" />
+				</Reveal>
+				<div className={css.teamCopy}>
+					<Reveal><span className={css.eyebrow}>The team</span></Reveal>
+					<Reveal delay={.08}><h3 className={css.h3}>Alvin Maina &amp; Nba Ngure</h3></Reveal>
+					<Reveal delay={.16}><p className={css.body}>Nobody builds an empire alone. Nba is my partner at Maina Group, and together we are taking the group from Nairobi to the rest of Africa.</p></Reveal>
+					<Reveal delay={.24}><img className={css.teamLogo} src="/img/story/logo-light.png" alt="Maina Group logo" width="120" height="120" loading="lazy" /></Reveal>
+				</div>
+			</div>
 
 			<div className={css.bento}>
 				{group.map((g, i) => (
