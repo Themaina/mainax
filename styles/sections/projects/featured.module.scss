@@ -33,6 +33,10 @@
 }
 
 
+.textOnly .details {
+	flex-grow: 1;
+}
+
 .projectHeader  {
 	display: flex;
 	flex-direction: column;

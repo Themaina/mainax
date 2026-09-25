@@ -1,0 +1,189 @@
+[
+	{
+		"project": "crosstech.ke",
+		"url": "https://crosstech.ke",
+		"repo": "Private",
+		"descriptionTitle": "A complete e-commerce system for Crosstech",
+		"description": "I developed a full-featured e-commerce system for Crosstech that streamlines both online and retail operations in Kenya. The platform integrates affiliate management, a robust POS system, inventory and order management, user management with role-based access, and seamless M-Pesa payment processing. It also supports real-time notifications, SMS updates, and is designed to scale with a mobile app coming soon. Built using Laravel, React, MySQL, and RESTful APIs, with integrations for M-Pesa Daraja API and SMS gateways, the system is engineered for performance, scalability, and reliability. Designed to compete with established platforms like Jumia, this solution positions Crosstech as a reliable and innovative marketplace for businesses and customers in Kenya.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/Screenshot 2024-0227-17 011601.png" }
+		],
+		"stack": [
+			{ "key": "php", "name": "PHP", "type": "devicon" },
+			{ "key": "mysql", "name": "mySQL", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "jquery", "name": "jQuery", "type": "devicon" },
+			{ "key": "woocommerce", "name": "WooCommerce", "type": "devicon" },
+			{ "key": "wordpress", "name": "Wordpress", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "sass", "name": "SCSS", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" },
+			{ "key": "google", "name": "GA4/GTM/EEC", "type": "devicon" }
+		]
+	},
+	{
+		"project": "invexia.co.ke",
+		"url": "https://invexia.co.ke",
+		"repo": "private",
+		"descriptionTitle": "A real estate listing website platform for Invexia Ltd",
+		"description": "Built on Laravel and the server side with PHP 8.2. A complete real estate listing platform with agent listing and property listing.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/invexia.pngnp" }
+		],
+		"stack": [
+			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+			{ "key": "react", "name": "React", "type": "devicon" },
+			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "sass", "name": "SCSS", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	},
+	{
+		"project":"www.dstfiber.co.ke",
+		"url": "https://reimagined-net.vercel.app",
+		"repo": "private",
+		"descriptionTitle": "A website for DST Fiber LTD",
+		"description": "The DST Internet website is a dynamic and user-friendly platform designed to highlight the services and offerings of the internet service provider.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/Screenshot 2026784-07-17 011253.png" }
+		],
+		"stack": [
+			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+			{ "key": "react", "name": "React", "type": "devicon" },
+			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "sass", "name": "SCSS", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	},
+	{
+		"project":"www.Kenire.co.ke",
+		"url": "https://kenire.co.ke",
+		"repo": "private",
+		"descriptionTitle": "A corporate website for Kenire Business Solutions",
+		"description": "Built with Wordpress, the Kenire Business Solutions Ltd website is a professional platform designed to showcase the company’s services.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/" }
+		],
+		"stack": [
+			{ "key": "wordpress", "name": "Wordpress", "type": "devicon" },
+			{ "key": "php", "name": "PHP", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "sass", "name": "SCSS", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	},
+	{
+		"project":"www.Celebrat.co.ke",
+		"url": "https://celebrat.co.ke",
+		"repo": "private",
+		"descriptionTitle": "An e-commerce platform for Celebrat Kenya",
+		"description": "Built with Laravel, the e-commerce website is used by the company to generate sales and manage its online store efficiently.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/" }
+		],
+		"stack": [
+			{ "key": "laravel", "name": "Laravel", "type": "devicon" },
+			{ "key": "php", "name": "PHP", "type": "devicon" },
+			{ "key": "mysql", "name": "MySQL", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "sass", "name": "SCSS", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	},
+	{
+		"project":"www.ByteDeals.co.ke",
+		"url": "https://bytedeals.co.ke",
+		"repo": "private",
+		"descriptionTitle": "An e-commerce marketplace for ByteDeals Kenya",
+		"description": "I developed ByteDeals.co.ke as a modern e-commerce marketplace focused on electronics and lifestyle products. The platform features product catalog management, secure M-Pesa integration, order tracking, and a responsive design optimized for both web and mobile. Built with Next.js, Laravel, and REST APIs, ByteDeals is engineered for performance, scalability, and a smooth customer experience.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/" }
+		],
+		"stack": [
+			{ "key": "nextjs", "name": "Next.js", "type": "devicon" },
+			{ "key": "laravel", "name": "Laravel", "type": "devicon" },
+			{ "key": "php", "name": "PHP", "type": "devicon" },
+			{ "key": "mysql", "name": "MySQL", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	},
+	{
+		"project":"www.UkiyoLifeShop.com",
+		"url": "https://ukiyolifeshop.com",
+		"repo": "private",
+		"descriptionTitle": "A lifestyle e-commerce platform for Ukiyo LifeShop",
+		"description": "I created UkiyoLifeShop.com as a lifestyle and wellness e-commerce platform with multi-currency support, categorized product listings, inventory management, and order tracking. Built with React, Node.js, and MongoDB, the system is designed for scalability and a global audience, ensuring smooth checkout and secure payments.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/" }
+		],
+		"stack": [
+			{ "key": "react", "name": "React", "type": "devicon" },
+			{ "key": "nodejs", "name": "Node.js", "type": "devicon" },
+			{ "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	},
+	{
+		"project":"www.HinataPharmacy.co.ke",
+		"url": "https://hinatapharmacy.co.ke",
+		"repo": "private",
+		"descriptionTitle": "An online pharmacy platform for Hinata Pharmacy",
+		"description": "I developed HinataPharmacy.co.ke as a specialized e-commerce platform for pharmaceuticals. It includes prescription uploads, secure M-Pesa integration, inventory tracking, and SMS notifications for order updates. Built with Laravel, Vue.js, and MySQL, the platform ensures compliance, security, and reliability while making healthcare products easily accessible online.",
+		"imageOptions": [
+			{ "key": "size", "value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556", "url": "/img/" }
+		],
+		"stack": [
+			{ "key": "laravel", "name": "Laravel", "type": "devicon" },
+			{ "key": "vuejs", "name": "Vue.js", "type": "devicon" },
+			{ "key": "php", "name": "PHP", "type": "devicon" },
+			{ "key": "mysql", "name": "MySQL", "type": "devicon" },
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+			{ "key": "html5", "name": "HTML5", "type": "devicon" },
+			{ "key": "css3", "name": "CSS3", "type": "devicon" },
+			{ "key": "git", "name": "Git(Hub)", "type": "devicon" }
+		]
+	}
+]
