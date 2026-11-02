@@ -397,6 +397,7 @@ function Contact() {
 			<Reveal delay={.08}><h2 className={css.contactTitle}>Let&apos;s build<br />something.</h2></Reveal>
 			<Reveal delay={.16} className={css.contactLinks}>
 				<a className={css.btnPrimary} href="https://wa.me/254797049888" target="_blank" rel="noopener noreferrer">Talk to me</a>
+				<Link href="/hire"><a className={css.btnGhost}>Hire me</a></Link>
 				<Link href="/projects"><a className={css.btnGhost}>All projects</a></Link>
 			</Reveal>
 			<footer className={css.footer}>
